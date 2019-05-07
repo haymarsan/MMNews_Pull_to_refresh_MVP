@@ -21,11 +21,6 @@ public class CommentVO {
     @SerializedName("comment-id")
     @ColumnInfo(name = "comment_id")
     private String commentId;
-
-    @ColumnInfo(name = "comment")
-    @SerializedName("comment")
-    private String comment;
-
     @ColumnInfo(name = "comment_date")
     @SerializedName("comment-date")
     private String commentDate;
@@ -33,6 +28,10 @@ public class CommentVO {
     @Embedded
     @SerializedName("acted-user")
     private ActedUserVO actedUser;
+
+    @ColumnInfo(name = "comment")
+    @SerializedName("comment")
+    private String comment;
 
     @ColumnInfo(name = "news_id")
     private String newsId;

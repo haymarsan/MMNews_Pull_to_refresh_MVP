@@ -134,7 +134,7 @@ public class MainActivity extends BaseActivity implements NewsItemDelegate {
                     @Override
                     public void onSuccess(List<NewsVO> newsList) {
                         //mNewsAdapter.appendNewData(newsList);
-                        mNewsAdapter.setNewData(newsList);
+                          mNewsAdapter.setNewData(newsList);
                     }
 
                     @Override

@@ -44,7 +44,7 @@ public class SmartScrollListener extends RecyclerView.OnScrollListener {
         }
     }
 
-    public void networkCallFinished() {
+    public void isNetworkCallFinished() {
         isNetworkCallStart = false;
     }
 
