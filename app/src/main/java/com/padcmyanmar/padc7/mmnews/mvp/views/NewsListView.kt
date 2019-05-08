@@ -1,5 +1,6 @@
 package com.padcmyanmar.padc7.mmnews.mvp.views
 
+import android.content.Context
 import com.padcmyanmar.padc7.mmnews.data.vos.NewsVO
 
 interface NewsListView {
@@ -8,5 +9,5 @@ interface NewsListView {
     fun displayNewsList(newsList: MutableList<NewsVO>)
     fun refreshNews (newsList: MutableList<NewsVO>)
     fun loadMoreNews (newsList: MutableList<NewsVO>)
-
+    fun goDetailsNews()
 }

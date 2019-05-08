@@ -20,7 +20,7 @@
             app:title="News Details">
 
             <android.support.v4.view.ViewPager
-                android:id="@+id/vp_news_details_images"
+                android:id="@+id/vpNewsDetailsImages"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/news_details_appbar_height"
                 android:fitsSystemWindows="true"

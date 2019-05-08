@@ -41,8 +41,10 @@ class MainActivityKT : BaseActivity(), NewsListView {
 
     private var mSmartScrollListener: SmartScrollListener? = null
 
-    fun newIntent(context: Context): Intent {
-        return Intent(context, MainActivity::class.java)
+    companion object {
+        fun newIntent(context: Context): Intent {
+            return Intent(context, MainActivityKT::class.java)
+        }
     }
 
     protected override fun onCreate(savedInstanceState: Bundle?) {
@@ -141,12 +143,12 @@ class MainActivityKT : BaseActivity(), NewsListView {
 
     }
 
-    @OnClick(R.id.fab)
+    /*
     fun onTapFab(view: View) {
-        /*
+        *//*
         Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show();
-                */
+                *//*
 
         if (mBottomSheetBehavior!!.state == BottomSheetBehavior.STATE_COLLAPSED) {
             mBottomSheetBehavior!!.setState(BottomSheetBehavior.STATE_EXPANDED)
@@ -154,7 +156,7 @@ class MainActivityKT : BaseActivity(), NewsListView {
             mBottomSheetBehavior!!.setState(BottomSheetBehavior.STATE_COLLAPSED)
         }
     }
-
+*/
 
 /* delegation implement in Presenter
     override fun onTapNewsItem() {
@@ -200,5 +202,12 @@ class MainActivityKT : BaseActivity(), NewsListView {
     override fun loadMoreNews(newsList: MutableList<NewsVO>) {
         mNewsAdapter!!.appendNewData(newsList)
     }
+
+
+    override fun goDetailsNews() {
+        val intent = Intent(applicationContext, NewsDetailsActivityKT::class.java)
+        startActivity(intent)
+    }
+
 
 }

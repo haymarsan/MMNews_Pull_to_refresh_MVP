@@ -1,5 +1,6 @@
 package com.padcmyanmar.padc7.mmnews.mvp.views.presenters
 
+import android.content.Intent
 import android.widget.Toast
 import com.padcmyanmar.padc7.mmnews.data.models.NewsModel
 import com.padcmyanmar.padc7.mmnews.data.models.NewsModelImpl
@@ -65,15 +66,18 @@ class NewsListPresenterImpl(newsListView: NewsListView) : BasePresenter<NewsList
     }
 
     override fun onTapNewsItem() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
+        mView.goDetailsNews()
+
+
     }
 
     override fun onStart() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
     override fun onStop() {
-        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+
     }
 
 

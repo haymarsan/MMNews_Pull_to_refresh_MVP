@@ -33,6 +33,7 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
+/*
 public class MainActivity extends BaseActivity implements NewsItemDelegate {
 
     private BottomSheetBehavior<NestedScrollView> mBottomSheetBehavior;
@@ -201,10 +202,12 @@ public class MainActivity extends BaseActivity implements NewsItemDelegate {
 
     @OnClick(R.id.fab)
     public void onTapFab(View view) {
-        /*
+        */
+/*
         Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                 .setAction("Action", null).show();
-                */
+                *//*
+
 
         if (mBottomSheetBehavior.getState() == BottomSheetBehavior.STATE_COLLAPSED) {
             mBottomSheetBehavior.setState(BottomSheetBehavior.STATE_EXPANDED);
@@ -242,3 +245,4 @@ public class MainActivity extends BaseActivity implements NewsItemDelegate {
         startActivity(intent);
     }
 }
+*/

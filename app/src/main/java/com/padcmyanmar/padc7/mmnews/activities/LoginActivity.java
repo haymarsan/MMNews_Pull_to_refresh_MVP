@@ -61,7 +61,8 @@ public class LoginActivity extends BaseActivity {
         mUserModel.login(emailOrPhone, password, new LoginDelegate() {
             @Override
             public void onSuccess(LoginUserVO loginUser) {
-                Intent intent = MainActivity.newIntent(getApplicationContext());
+               // Intent intent = MainActivityKT.newIntent(LoginActivity.this);  //how to go
+                Intent intent = MainActivityKT.Companion.newIntent(getApplicationContext());
                 startActivity(intent);
             }
 
